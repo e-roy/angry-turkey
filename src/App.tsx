@@ -6,7 +6,7 @@ import { logEvent } from "firebase/analytics";
 
 const App: React.FC = () => {
   useEffect(() => {
-    logEvent(analytics, "page_view");
+    if (process.env.NODE_ENV === "production") logEvent(analytics, "page_view");
   }, []);
   return <SlingshotGame />;
 };

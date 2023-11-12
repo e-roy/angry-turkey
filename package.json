@@ -1,5 +1,5 @@
 {
-  "name": "angry-birds-clone",
+  "name": "angry-turkey",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "firebase deploy --only hosting",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
